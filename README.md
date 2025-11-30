@@ -47,11 +47,10 @@ Každý end-point:
 
 ## 4. Testování (Insomnia / Postman)
 
-Pro každý uuCmd si v Insomnia vytvoř HTTP request:
+Pro každý uuCmd si v Insomnia vytvořte HTTP request:
 
-- nastav URL, metodu,
-- nastav hlavičku `x-user-profile`,
-- nastav JSON body / query param dle `dtoIn`.
+- nastavte URL, metodu,
+- nastavtehlavičku `x-user-profile`,
+- nastavte JSON body / query param dle `dtoIn`.
 
-Následně můžeš projekt z Insomnia exportovat do souboru
-a uložit ho do složky `test/insomnia` v tomto repozitáři (podle zadání DU4).
+

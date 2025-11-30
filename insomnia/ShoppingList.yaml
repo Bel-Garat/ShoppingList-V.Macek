@@ -1,0 +1,211 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Schopping List
+meta:
+  id: wrk_26595936440e445ca266665a57678d8b
+  created: 1764514307222
+  modified: 1764514307222
+  description: ""
+collection:
+  - url: http://localhost:3000/shoppingList/create
+    name: /shoppingList/create
+    meta:
+      id: req_a554208da89d437292e0740f59be91c8
+      created: 1764529552391
+      modified: 1764535439956
+      isPrivate: false
+      description: ""
+      sortKey: -1764529552391
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "title": "Seznam"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+      - name: x-user-profile
+        value: owner
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/listMine
+    name: /shoppingList/list
+    meta:
+      id: req_51294934f80f4d8d9b7e1cb4bbc2a43e
+      created: 1764531487932
+      modified: 1764535448771
+      isPrivate: false
+      description: ""
+      sortKey: -1764531487932
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "title": "Seznam"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+      - name: x-user-profile
+        value: owner
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/get?id=692cb5fe422f31033664b737
+    name: /shoppingList/get?id=<ID>
+    meta:
+      id: req_33a0b81292fb44d98cd6813c3d49edf9
+      created: 1764531670780
+      modified: 1764537890961
+      isPrivate: false
+      description: ""
+      sortKey: -1764531670780
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "title": "Seznam"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+      - name: x-user-profile
+        value: owner
+        description: ""
+        disabled: false
+      - name: x-user
+        value: '{"id":"user-123","name":"Test"}'
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/delete
+    name: /shoppingList/delete
+    meta:
+      id: req_1fedb12110604ba3851d3f6803f0f962
+      created: 1764534873815
+      modified: 1764538281574
+      isPrivate: false
+      description: ""
+      sortKey: -1764534873815
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": "692cb05e4f8ac4dcf42306ae"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+      - name: x-user-profile
+        value: owner
+        description: ""
+        disabled: false
+      - name: x-user
+        value: '{"id":"user-123","name":"Test User"}'
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3000/shoppingList/update
+    name: /shoppingList/update
+    meta:
+      id: req_8c11b0a5b38c40f5acae69c8077f4ef5
+      created: 1764538302135
+      modified: 1764539196988
+      isPrivate: false
+      description: ""
+      sortKey: -1764538302135
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "id": "692cba916f0ac9333c4c2e8f",
+          "title": "Nákupní seznam UPDATED",
+          "description": "Koupit věci"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+      - name: x-user-profile
+        value: owner
+        description: ""
+        disabled: false
+      - name: x-user
+        value: '{"id":"user-123","name":"Test"}'
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_c4c3a0e8d1e8d8fcfa111d035071c688ed148f87
+    created: 1764514307235
+    modified: 1764514307235
+environments:
+  name: Base Environment
+  meta:
+    id: env_c4c3a0e8d1e8d8fcfa111d035071c688ed148f87
+    created: 1764514307230
+    modified: 1764514307230
+    isPrivate: false

@@ -1,0 +1,18 @@
+{
+  "name": "shopping-list-api-du4",
+  "version": "1.0.0",
+  "description": "Shopping List CRUD API for BBSY Homework assignment #4",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
+    "mongoose": "^8.20.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
